@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random site</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js"></script>
+  </head>
+
+  <body>
+    <audio id="audio" src="./images/click.mp3" autostart="false" ></audio>
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user">
+            <img src="./images/cj.jpg" alt="" />
+            <h3>Carl Johnson</h3>
+            <p>“Ah S-t, Here We Go Again”</p>
+          </div>
+
+        <div class="links">
+
+            <button class="button" onclick="PlayGamesite();">
+              <div class="link">
+                <img src="./images/twitch.png" alt="" />
+                <h2>Streams</h2>
+              </div>
+          </button>
+
+
+          <button class="button" onclick="PlayDevet();">
+            <div class="link">
+              <img src="./images/steam.png" alt="" />
+              <h2>Games</h2>
+            </div>
+         </button>
+
+          <button class="button">
+            <div class="link">
+              <img  src="./images/upcoming.png" alt="" />
+              <h2>New</h2>
+            </div>
+          </button>
+
+          <button class="button" onclick="PlaySound();">
+            <div class="link">
+              <img src="./images/library.png" />
+              <h2>Library</h2>
+            </div>
+          </button>   
+        </div>
+   
+            <button class="gamesite" onclick="PlayGamesite();">
+            <div class="pro">
+              <h2>Join for free games.</h2>
+              <img src="./images/controller.png" alt="" />
+            </div>
+          </button>
+
+
+      </div>
+        <div class="games">
+          <div class="status">
+            <h1>Active Games</h1>
+            <input type="text" />
+          </div>
+          <div class="cards">
+            <div class="card">
+                <img src="./images/sackboy.png" alt="" />
+                <div class="card-info">
+                  <h2>Sackboy A Great Adventure</h2>
+                  <p>Computer Version</p>
+                  <div class="progress1"></div>
+                </div>
+                <div class="percentage">20%</div>
+            </div>
+            <div class="card">
+                <img src="./images/assassins.png" alt="" />
+                <div class="card-info">
+                  <h2>Assassing Creed Vallhala</h2>
+                  <p>Computer Version</p>
+                  <div class="progress2"></div>
+                </div>
+                <div class="percentage">85%</div>
+            </div>
+            <div class="card">
+                <img src="./images/spiderman.png" alt="" />
+                <div class="card-info">
+                  <h2>Spiderman Miles Morales</h2>
+                  <p>Computer Version</p>
+                  <div class="progress3"></div>
+                </div>
+                <div class="percentage">47%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+  </body>
+</html>

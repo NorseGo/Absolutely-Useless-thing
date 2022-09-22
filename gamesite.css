@@ -1,0 +1,67 @@
+/*Start*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    }
+
+/*Backgroun*/
+
+    body{
+        min-height: 100vh;
+        background: linear-gradient(to right top, rgb(131, 217, 221) 0%, rgb(128, 255, 204));
+        display: grid;
+        place-items: center;
+    }
+    .circle {
+        width: 200px;
+        height: 200px;
+        border: 30px solid rgb(49, 49, 49);
+        border-radius: 50%;
+    }
+    .circle:last-child {
+        margin-top: -30px;
+    }
+    .box {
+        transform: rotate(90deg);
+        position: relative;
+    }
+    .box span {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        background: none;
+        border-radius: 50%;
+        animation: rotate 5s linear infinite;
+    }
+
+@keyframes rotate {
+    0% {
+        transform: rotate(-180deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    50.02% {
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(-0deg);
+        bottom: 0;
+    }
+}
+
+    b {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.3));
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+/*Dinosaur*/
+
